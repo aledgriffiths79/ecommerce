@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
-# not using the env file now as we will be running everything off heroku (production) not local. By commenting out import env u then cant run the application locally. To run it uncomment it
+# not using the env file now as we will be running everything off heroku (production) not local. By commenting out import env you then cant run the application locally. To run it uncomment it
 # import env
 
 import dj_database_url
