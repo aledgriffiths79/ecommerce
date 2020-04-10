@@ -13,9 +13,12 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # not using the env file now as we will be running everything off heroku (production) not local. By commenting out import env u then cant run the application locally. To run it uncomment it
-import env
+# import env
 
 import dj_database_url
+
+if os.path.exists('env.py'):
+    import env
 
 #  So to actually use our env.py variables, we have to put import env at the top of our settings.py file. And that will import the entire file, and therefore, allow us access to our environmental variables.
 
