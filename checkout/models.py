@@ -8,7 +8,7 @@ from products.models import Product
 # blank= false means it cannot be left blank
 
 class Order(models.Model):
-  full_name = models.CharField(max_length=50, blank=False)
+  full_name = models.CharField(max_length=50, blank=False, default="Aled Griffiths") 
   phone_number = models.CharField(max_length=20, blank=False)
   country = models.CharField(max_length=40, blank=False)
   postcode = models.CharField(max_length=20, blank=True)
